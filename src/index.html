@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Pizza - De Silos</title>
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="icon" href="../favicon.ico" />
+  </head>
+  <body>
+    <header class="py-7 shadow-md w-full z-50">
+      <div class="container">
+        <!--wrapper-->
+        <div class="flex justify-between items-center">
+          <!--logo-->
+          <div class="flex items-center h-18">
+            <img src="../IMG/LOGO.png" alt="logo" />
+          </div>
+          <!--nav-->
+          <nav class="headerNav">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li>
+                <a href=""><button id="themeToggle"></button></a>
+              </li>
+            </ul>
+          </nav>
+          <!--toggle menu-->
+          <div class="toggleMenu">
+            <span></span>
+            <span></span>
+          </div>
+          <!--transparent-->
+          <div class="transparent"></div>
+        </div>
+      </div>
+    </header>
+
+    <!--banner-->
+    <section id="home">
+      <div class="bg-white text-primary text-sm">
+        <div class="max-w-7xl mx-auto flex items-center justify-center gap-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 640 640"
+            class="w-4 h-4 fill-primary"
+          >
+            <path
+              d="M525.2 82.9C536.7 88 544 99.4 544 112L544 528C544 540.6 536.7 552 525.2 557.1C513.7 562.2 500.4 560.3 490.9 552L444.3 511.3C400.7 473.2 345.6 451 287.9 448.3L287.9 544C287.9 561.7 273.6 576 255.9 576L223.9 576C206.2 576 191.9 561.7 191.9 544L191.9 448C121.3 448 64 390.7 64 320C64 249.3 121.3 192 192 192L276.5 192C338.3 191.8 397.9 169.3 444.4 128.7L491 88C500.4 79.7 513.9 77.8 525.3 82.9zM288 384L288 384.2C358.3 386.9 425.8 412.7 480 457.6L480 182.3C425.8 227.2 358.3 253 288 255.7L288 384z"
+            />
+          </svg>
+          <p class="text-center">
+            This website provides information about our store. Online
+            transactions are coming soon.
+          </p>
+        </div>
+      </div>
+      <div class="container bg-banner pt-20">
+        <div
+          class="max-w-7xl mx-auto px-6 py-20 flex flex-col-reverse lg:flex-row items-center justify-between gap-16"
+        >
+          <div class="text-center lg:text-left max-w-xl">
+            <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+              <span class="font-extrabold">HUNGRY?</span>
+               YOU'RE IN <br class="hidden sm:block" />
+              THE RIGHT PLACE
+            </h1>
+
+            <a
+              href="#menu"
+              class="inline-block mt-8 bg-primary text-white px-8 py-4 rounded-md font-semibold hover:opacity-90 transition"
+            >
+              VIEW OUR MENU
+            </a>
+          </div>
+          <img src="../IMG/banner-home.png" class="w-80 md:w-112.5" />
+        </div>
+      </div>
+    </section>
+
+    <!--about-->
+    <section id="about" class="py-20 bg-white">
+      <div class="relative w-full max-w-lg mx-auto px-6">
+        <div class="relative w-full max-w-md mx-auto mb-28 lg:mb-32">
+          <img
+            src="../IMG/3chefs.png"
+            class="w-4/5 rounded-3xl shadow-xl border-[6px] border-black relative z-0"
+            alt="Our Chefs"
+          />
+
+          <img
+            src="../IMG/food.png"
+            class="absolute top-0.5 right-0 w-4/5 rounded-3xl shadow-xl border-[6px] border-black z-10"
+            alt="Pizza and Food"
+          />
+        </div>
+
+        <div class="text-left max-w-xl mx-auto">
+          <h2
+            class="text-3xl md:text-4xl font-extrabold mb-5 text-black tracking-tight"
+          >
+            WELCOME TO GET PIZZA
+          </h2>
+
+          <p
+            class="text-primary font-bold mb-5 text-sm md:text-base leading-snug pr-4"
+          >
+            OUR CHEFS ARE WORKING 24/7 AND ARE READY TO ACCEPT VISITORS AND AT
+            ANY TIME OF THE DAY AND NIGHT
+          </p>
+
+          <p class="text-gray-800 text-sm md:text-base leading-relaxed">
+            We would like to take this opportunity to welcome you at our Pizza
+            House. We are offering a warm, friendly atmosphere to share a meal
+            with family and friends at any time of the day or evening.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--menu-->
+    <section id="menu" class="bg-tertiary text-white py-24 text-center">
+      <div class="max-w-7xl mx-auto px-6">
+        <h2 class="text-2xl font-bold mb-10">
+          WE OFFER PEOPLE BEST WAY TO EAT BEST FOOD
+        </h2>
+        <ul class="flex justify-center items-center gap-6 mb-14 flex-wrap">
+  <li>
+    <a href="#" 
+       class="w-21 h-21 flex items-center justify-center
+              rounded-full border-2 border-secondary
+              bg-white/10 hover:bg-secondary transition">
+      <img src="../IMG/pizzaa.png" class="w-20 h-20" />
+    </a>
+  </li>
+  <li>
+    <a href="#"
+       class="w-21 h-21 flex items-center justify-center
+              rounded-full bg-white/10 hover:bg-secondary transition">
+      <img src="../IMG/burger.png" class="w-20 h-20" />
+    </a>
+  </li>
+  <li>
+    <a href="#"
+       class="w-21 h-21 flex items-center justify-center
+              rounded-full bg-white/10 hover:bg-secondary transition">
+      <img src="../IMG/chicken.png" class="w-20 h-20" />
+    </a>
+  </li>
+  <li>
+    <a href="#"
+       class="w-21 h-21 flex items-center justify-center
+              rounded-full bg-white/10 hover:bg-secondary transition">
+      <img src="../IMG/drinks.png" class="w-20 h-20" />
+    </a>
+  </li>
+  <li>
+    <a href="#"
+       class="w-21 h-21 flex items-center justify-center
+              rounded-full bg-white/10 hover:bg-secondary transition">
+      <img src="../IMG/cake.png" class="w-20 h-20" />
+    </a>
+  </li>
+</ul>
+
+        <!--card-->
+        <div class="flex md:grid-cols-2 lg:flex justify-center ">
+          <!--1-->
+          <div class="menu-card mx-auto lg:m-1">
+            <img
+              src="../IMG/prosciutto.png"
+              class=" mx-auto mb-6 rounded-full border-white/30 p-3"
+            />
+
+            <h3 class="font-semibold text-lg">PROSCIUTTO PIZZA</h3>
+            <p class="my-2">$25.00</p>
+            <p class="text-yellow-400">★★★★★</p>
+
+            <button
+              class="mt-4 border border-primary px-5 py-2 rounded-xl hover:bg-white hover:text-tertiary transition"
+            >
+              Read more
+            </button>
+          </div>
+
+          <!--2-->
+          <div class="menu-card mx-auto">
+            <img
+              src="../IMG/bbq pizza.png"
+              class="mx-auto mb-6 rounded-full border-white/30 p-3"
+            />
+
+            <h3 class="font-semibold text-lg">BARBECUE PIZZA</h3>
+            <p class="my-2">$25.00</p>
+            <p class="text-yellow-400">★★★★★</p>
+
+            <button
+              class="mt-4 border border-primary px-5 py-2 rounded-xl hover:bg-white hover:text-tertiary transition"
+            >
+              Read more
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--connect-->
+    <section id="contact" class="bg-primary text-white py-20">
+      <div
+        class="max-w-6xl mx-auto px-6 flex flex-col lg:flex-row items-center justify-between gap-12"
+      >
+        <img src="../IMG/chef.png" class="w-60" />
+
+        <div class="text-center lg:text-left">
+          <h2 class="text-2xl font-bold">LET'S CONNECT</h2>
+          <p class="mb-6">and get a 10% off bill offers and invites</p>
+
+          <div class="flex flex-col sm:flex-row">
+            <input
+              type="email"
+              placeholder="YOUR EMAIL ADDRESS"
+              class="px-4 py-3 text-black w-64 rounded-l-md sm:rounded-r-none"
+            />
+
+            <button
+              class="bg-secondary text-black font-semibold px-6 py-3 rounded-r-md"
+            >
+              SUBSCRIBE
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--footer-->
+    <footer class="bg-white py-16 text-center">
+      <img src="../IMG/LOGO.png" class="mx-auto mb-10" />
+
+      <div
+        class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10"
+      >
+        <div>
+          <h4 class="footer-title">ADDRESS</h4>
+          <p>570 8th Ave, New York, NY</p>
+          <p>10018 United States</p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">BOOK A TABLE</h4>
+          <p>Dogfood Och Sliders Foodtruck.</p>
+          <p>Under Om Oss Kan Ni Läsa</p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">OPENING HOURS</h4>
+          <p>Monday - Friday</p>
+          <p>10.00 AM - 11.00 PM</p>
+        </div>
+      </div>
+
+      <p class="mt-12 text-sm text-gray-500">© 2026 Get Pizza</p>
+    </footer>
+    <!--script-->
+    <script src="../js/toggle-menu.js"></script>
+    <script src="../js/mode.js"></script>
+  </body>
+</html>

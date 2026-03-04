@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Poppins";
+  src: url(/fonts/Poppins-Regular.woff2) format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(/fonts/Poppins-Medium.woff2) format("woff2");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(/fonts/Poppins-SemiBold.woff2) format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url(/fonts/Poppins-Bold.woff2) format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@theme {
+  --font-poppins: "Poppins", sans-serif;
+  --color-primary: #b23920;
+  --color-secondary: #f7b754;
+  --color-tertiary: #223c5f;
+  --color-banner: #e8cfad;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth scroll-p-16;
+  }
+  body {
+    @apply overflow-x-hidden font-poppins text-black/80 text-base bg-white;
+  }
+  .container {
+    @apply max-w-7xl w-full mx-auto px-4;
+  }
+  h1 {
+    @apply text-[clamp(2rem,6vw,3rem)] font-bold;
+  }
+  h2 {
+    @apply text-[clamp(1.5rem,5vw,2.5rem)] font-bold;
+  }
+  h3 {
+    @apply text-[clamp(1.25rem,4vw,2rem)] font-bold;
+  }
+  h4 {
+    @apply text-[clamp(1rem,3vw,1.75rem)] font-bold;
+  }
+  h5 {
+    @apply text-xl font-semibold;
+  }
+  h6 {
+    @apply text-lg font-semibold;
+  }
+}
+
+@layer components {
+  header {
+    @apply bg-white;
+  }
+  .headerNav ul {
+    @apply flex flex-col gap-5 fixed w-full top-26 text-left items-start overflow-hidden right-0 h-0 opacity-0 duration-300 
+    /*tablet-desktop*/
+    md:opacity-100 md:flex-row md:items-center md:top-auto md:h-auto md:static;
+  }
+  .headerNav ul.open {
+    @apply h-fit opacity-100 bg-white  w-full top-30 px-4 pb-3 duration-300;
+    
+    /*tablet-desktop*/
+    md:shadow-none md:px-0 md:pb-0;
+  }
+  .toggleMenu span:first-child {
+    @apply w-15 duration-100;
+  }
+  .toggleMenu span:last-child {
+    @apply w-9 duration-100;
+  }
+  .toggleMenu span {
+    @apply inline-block h-1.5 rounded-xl bg-primary/80;
+  }
+  .toggleMenu.open span:first-child {
+    @apply w-9 duration-100;
+  }
+  .toggleMenu.open span:last-child {
+    @apply w-15 duration-100;
+  }
+  .toggleMenu {
+    @apply flex flex-col gap-1 md:hidden;
+  }
+  .transparent {
+    @apply hidden;
+  }
+  .transparent.open {
+    @apply block fixed h-screen w-full backdrop-blur-sm left-0 top-80 duration-300 overflow-y-hidden;
+  }
+  .menu-card {
+    @apply border border-white/30 rounded-2xl p-10
+           transition hover:scale-105 duration-300;
+  }
+  .footer-title {
+    @apply font-bold mb-3 tracking-wide;
+  }
+
+}
