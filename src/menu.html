@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Pizza - De Silos</title>
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="icon" href="../favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!--header-->
+    <header class="py-7 shadow-md w-full z-50 bg-white sticky top-0">
+      <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center h-18">
+            <img src="../IMG/LOGO.png" alt="logo" class="h-12" />
+          </div>
+          <nav class="headerNav font-bold">
+            <ul class="flex space-x-8">
+              <li><a href="index.html" class="hover:text-primary">Home</a></li>
+              <li><a href="about.html" class="hover:text-primary">About</a></li>
+              <li><a href="#menu" class="text-primary border-b-2 border-primary">Menu</a></li>
+              <li><a href="#contact" class="hover:text-primary">Contact</a></li>
+              <li><a href=""><button id="themeToggle"></button></a></li>
+            </ul>
+          </nav>
+          <div class="toggleMenu">
+            <span></span>
+            <span></span>
+          </div>
+          <div class="transparent"></div>
+        </div>
+      </div>
+    </header>
+<!--announcement-->
+    <section id="announcement">
+      <div class="bg-white text-primary text-lg py-2 flex items-center justify-center">
+        <p class="text-center"><i class="fa-solid fa-bullhorn"></i>
+          This website provides information about our store. Online transactions are coming soon.
+        </p>
+      </div>
+    </section>
+<!--banner-->
+   <section class="relative w-full h-125 md:h-175 flex items-center bg-black overflow-hidden">
+  <img 
+    src="../IMG/menubanner.jpg" 
+    alt="Hero Banner" 
+    class="absolute inset-0 w-full h-full object-cover object-right md:object-center opacity-70" 
+  />
+  
+  <div class="absolute inset-0 bg-linear-to-r from-black/80 via-black/40 to-transparent"></div> 
+
+  <div class="container relative z-10 px-6 md:px-12">
+    <h1 class="text-white text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black uppercase leading-[0.9] tracking-tighter text-left">
+      Always Fresh <br /> 
+      & Ready to be <br /> 
+      Served.
+    </h1>
+  </div>
+</section>
+
+<section id="menu" class="bg-tertiary text-white py-16 md:py-24 text-center">
+  <div class="container">
+    <h2 class="uppercase mb-12 max-w-2xl mx-auto leading-tight font-bold text-2xl md:text-4xl">
+      WE OFFER PEOPLE BEST WAY TO EAT BEST FOOD
+    </h2>
+
+    <div class="bg-secondary rounded-full max-w-4xl mx-auto mb-20 flex items-center justify-between py-4 px-10 md:px-16 text-tertiary font-black text-[12px] md:text-lg shadow-2xl overflow-x-auto no-scrollbar">
+      <button data-category="pizza" class="category-btn uppercase hover:opacity-60 transition shrink-0">Pizza</button>
+      <span class="h-6 w-px bg-tertiary/30"></span>
+      <button data-category="burger" class="category-btn uppercase hover:opacity-60 transition shrink-0">Burger</button>
+      <span class="h-6 w-px bg-tertiary/30"></span>
+      <button data-category="chicken" class="category-btn uppercase hover:opacity-60 transition shrink-0">Chicken</button>
+      <span class="h-6 w-px bg-tertiary/30"></span>
+      <button data-category="drinks" class="category-btn uppercase hover:opacity-60 transition shrink-0">Drinks</button>
+      <span class="h-6 w-px bg-tertiary/30"></span>
+      <button data-category="cake" class="category-btn uppercase hover:opacity-60 transition shrink-0">Cake</button>
+    </div>
+  </div>
+</section>
+        <div id="menu-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          
+          <div class="menu-item pizza menu-card flex flex-col items-center">
+            <div class="w-48 h-48 md:w-56 md:h-56 rounded-full border-[6px] border-white/10 p-2 mb-6">
+              <img src="../IMG/prosciutto.png" class="w-full h-full object-cover rounded-full" alt="Pizza" />
+            </div>
+            <h4 class="uppercase mb-1">PROSCIUTTO PIZZA</h4>
+            <p class="text-xl font-bold mb-1">$25.00</p>
+            <div class="text-secondary text-sm mb-6">★★★★★</div>
+            <button class="border border-primary px-10 py-2.5 rounded-2xl text-xs font-black uppercase tracking-widest hover:bg-white hover:text-tertiary transition">
+              Read more
+            </button>
+          </div>
+
+          <div class="menu-item pizza menu-card flex flex-col items-center">
+            <div class="w-48 h-48 md:w-56 md:h-56 rounded-full border-[6px] border-white/10 p-2 mb-6">
+              <img src="../IMG/bbq pizza.png" class="w-full h-full object-cover rounded-full" alt="Pizza" />
+            </div>
+            <h4 class="uppercase mb-1">BARBECUE PIZZA</h4>
+            <p class="text-xl font-bold mb-1">$25.00</p>
+            <div class="text-secondary text-sm mb-6">★★★★★</div>
+            <button class="border border-primary px-10 py-2.5 rounded-2xl text-xs font-black uppercase tracking-widest hover:bg-white hover:text-tertiary transition">
+              Read more
+            </button>
+          </div>
+
+          <div class="menu-item pizza menu-card flex flex-col items-center">
+            <div class="w-48 h-48 md:w-56 md:h-56 rounded-full border-[6px] border-white/10 p-2 mb-6">
+              <img src="../IMG/prosciutto.png" class="w-full h-full object-cover rounded-full" alt="Pizza" />
+            </div>
+            <h4 class="uppercase mb-1">CLASSIC PIZZA</h4>
+            <p class="text-xl font-bold mb-1">$25.00</p>
+            <div class="text-secondary text-sm mb-6">★★★★★</div>
+            <button class="border border-primary px-10 py-2.5 rounded-2xl text-xs font-black uppercase tracking-widest hover:bg-white hover:text-tertiary transition">
+              Read more
+            </button>
+          </div>
+
+        </div>
+
+    <section id="contact" class="bg-primary relative overflow-hidden py-20 lg:py-0 ">
+      <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center">
+        <img src="../IMG/chef.png" alt="Chef" class="md:w-80 hidden md:block" />
+        <div class="text-center md:text-left text-white">
+          <h2 class="text-3xl font-black uppercase mb-2">Let's Connect</h2>
+          <p class="mb-6">And get a 10% off bill offers and invites</p>
+          <div class="flex bg-white rounded-lg p-1 max-w-md mx-auto md:mx-0">
+            <input type="email" placeholder="YOUR EMAIL ADDRESS" class="grow px-4 py-2 outline-none text-black text-sm" />
+            <button class="bg-orange-400 text-black px-6 py-2 rounded  hover:bg-orange-500">SUBSCRIBE</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-white py-16 text-center">
+      <img src="../IMG/LOGO.png" class="mx-auto mb-10" />
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div>
+          <h4 class="font-black uppercase">Address</h4>
+          <p class="text-gray-600">570 8th Ave, New York, NY</p>
+          <p class="text-gray-600">10018 United States</p>
+        </div>
+        <div>
+          <h4 class="font-black uppercase">Book A Table</h4>
+          <p class="text-gray-600">Dogfood Och Sliders Foodtruck.</p>
+          <p class="text-gray-600">Under Om Oss Kan Ni Läsa</p>
+        </div>
+        <div>
+          <h4 class="font-black uppercase">Opening Hours</h4>
+          <p class="text-gray-600">Monday - Friday</p>
+          <p class="text-gray-600">10.00 AM - 11.00 PM</p>
+        </div>
+      </div>
+      <p class="mt-12 text-sm text-primary text-500">0123456987</p>
+    </footer>
+
+    <script src="../js/toggle-menu.js"></script>
+    <script src="../js/mode.js"></script>
+    <script src="../js/script.js"></script>   
+  </body>
+</html>

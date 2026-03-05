@@ -12,7 +12,7 @@
     />
   </head>
   <body>
-<!--header-->
+    <!--header-->
     <header class="py-7 shadow-md w-full z-50 bg-white sticky top-0">
       <div class="container mx-auto px-4">
         <div class="flex justify-between items-center">
@@ -22,15 +22,19 @@
           <nav class="headerNav font-bold">
             <ul class="flex space-x-8">
               <li>
+                <a href="index.html" class="hover:text-primary">Home</a>
+              </li>
+              <li>
                 <a
-                  href="index.html"
+                  href="about.html"
                   class="text-primary border-b-2 border-primary"
-                  >Home</a
+                  >About</a
                 >
               </li>
-              <li><a href="about.html" class="hover:text-primary">About</a></li>
               <li><a href="menu.html" class="hover:text-primary">Menu</a></li>
-              <li><a href="contact.html" class="hover:text-primary">Contact</a></li>
+              <li>
+                <a href="contact.html" class="hover:text-primary">Contact</a>
+              </li>
               <li>
                 <a href=""><button id="themeToggle"></button></a>
               </li>
@@ -45,88 +49,180 @@
       </div>
     </header>
 
-<!--announcement-->
-<section id="announcement">
-  <div
-        class="bg-white text-primary text-lg py-2 flex items-center justify-center">
-        <p class="text-center"><i class="fa-solid fa-bullhorn"></i>
+    <!--announcement-->
+    <section id="announcement">
+      <div
+        class="bg-white text-primary text-lg py-2 flex items-center justify-center"
+      >
+        <p class="text-center">
+          <i class="fa-solid fa-bullhorn"></i>
           This website provides information about our store. Online transactions
           are coming soon.
         </p>
       </div>
-</section>
+    </section>
+    <!--video-->
+    <section class="py-16 bg-white">
+      <div
+        class="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+      >
+        <div class="rounded-xl overflow-hidden shadow-2xl">
+          <iframe
+            width="100%"
+            height="415"
+            src="https://www.youtube.com/embed/Y6MHE0-CQAs?si=RlFO6G3bjHTHHMPM"
+            title="YouTube video player"
+            frameborder="0"
+            allow="
+              accelerometer;
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              gyroscope;
+              picture-in-picture;
+              web-share;
+            "
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="space-y-6">
+          <h1
+            class="text-5xl md:text-6xl font-black text-primary leading-tight uppercase"
+          >
+            Serving Get Pizzas By The Since 1985
+          </h1>
+          <p class="text-gray-600 text-lg leading-relaxed">
+            We would like to take this opportunity to welcome you at our Pizza
+            House. We are offering a warm, friendly atmosphere to share a meal
+            with family and friends at any time of the day or evening.
+          </p>
+        </div>
+      </div>
+    </section>
 
-<!--banner-->
-    <section id="home">
-      <div class="bg-banner pt-10">
-        <div
-          class="max-w-6xl mx-auto px-6 flex flex-col-reverse lg:flex-row  gap-16 md:items-center py-8"
-        >
-          <div class="text-left z-10 max-w-2xl">
-            <h1 class="text-black leading-[0.9] mb-8">
-              <span
-                class="font-extrabold text-6xl md:text-7xl block mb-2 uppercase"
-                >Hungry?</span>
-              <span class="text-5xl md:text-7xl font-normal uppercase"
-                >You're in <br />
-                the right place</span
+    <!--story-->
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-black text-center mb-16 uppercase">
+          Our Story
+        </h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <div class="space-y-4" id="story-accordion">
+            <div class="accordion-item shadow-sm rounded overflow-hidden">
+              <div
+                class="accordion-header bg-primary text-white p-4 cursor-pointer flex justify-between items-center"
               >
-            </h1>
-            <a
-              href="#menu"
-              class="inline-block bg-primary text-white px-5 py-3 rounded-xl text-md tracking-widest hover:brightness-90 transition"
-            >
-              VIEW OUR MENU
-            </a>
+                <span class="font-bold">1985</span>
+                <i
+                  class="fa-solid fa-chevron-down transition-transform duration-300 icon"
+                ></i>
+              </div>
+              <div
+                class="accordion-content hidden bg-white text-gray-700 p-5 text-sm leading-relaxed border border-t-0 border-gray-200"
+              >
+                1985 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Ducimus labore tenetur sunt laboriosam atque nobis quae minus
+                nemo sequi! Voluptatum facere facilis nam itaque quia dolores,
+                eligendi quidem aliquid sit autem consectetur eos vel
+                consequuntur.
+              </div>
+            </div>
+
+            <div class="accordion-item shadow-sm rounded overflow-hidden">
+              <div
+                class="accordion-header bg-primary text-white p-4 cursor-pointer flex justify-between items-center"
+              >
+                <span class="font-bold">1990</span>
+                <i
+                  class="fa-solid fa-chevron-down transition-transform duration-300 icon"
+                ></i>
+              </div>
+              <div
+                class="accordion-content hidden bg-white text-gray-700 p-5 text-sm leading-relaxed border border-t-0 border-gray-200"
+              >
+                1990 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quibusdam aut inventore, et quasi culpa a. Dolore perspiciatis,
+                rem praesentium quod eaque vitae aspernatur magnam, blanditiis
+                cumque nam, non possimus distinctio esse cupiditate maxime
+                voluptas vel.
+              </div>
+            </div>
+
+            <div class="accordion-item shadow-sm rounded overflow-hidden">
+              <div
+                class="accordion-header bg-primary text-white p-4 cursor-pointer flex justify-between items-center"
+              >
+                <span class="font-bold">2000</span>
+                <i
+                  class="fa-solid fa-chevron-down transition-transform duration-300 icon"
+                ></i>
+              </div>
+              <div
+                class="accordion-content hidden bg-white text-gray-700 p-5 text-sm leading-relaxed border border-t-0 border-gray-200"
+              >
+                2000 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Itaque rerum excepturi quaerat totam iure facere magni aperiam
+                nostrum enim ad ipsa rem dolorum reprehenderit laudantium ex
+                sapiente, iste obcaecati! Ratione adipisci pariatur labore vel
+                error!
+              </div>
+            </div>
+
+            <div class="accordion-item shadow-sm rounded overflow-hidden">
+              <div
+                class="accordion-header bg-primary text-white p-4 cursor-pointer flex justify-between items-center"
+              >
+                <span class="font-bold">2010</span>
+                <i
+                  class="fa-solid fa-chevron-down transition-transform duration-300 icon"
+                ></i>
+              </div>
+              <div
+                class="accordion-content hidden bg-white text-gray-700 p-5 text-sm leading-relaxed border border-t-0 border-gray-200"
+              >
+                2010 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Quos ad, repudiandae, qui earum accusantium sint nulla, ratione
+                facilis eligendi aut dicta deleniti vitae? Magnam aliquid enim
+                ducimus quibusdam, blanditiis reprehenderit atque cumque tempora
+                vero commodi.
+              </div>
+            </div>
+
+            <div class="accordion-item shadow-sm rounded overflow-hidden">
+              <div
+                class="accordion-header bg-primary text-white p-4 cursor-pointer flex justify-between items-center"
+              >
+                <span class="font-bold">2021</span>
+                <i
+                  class="fa-solid fa-chevron-down transition-transform duration-300 icon"
+                ></i>
+              </div>
+              <div
+                class="accordion-content hidden bg-white text-gray-700 p-5 text-sm leading-relaxed border border-t-0 border-gray-200"
+              >
+                2021 Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Aut beatae quasi esse voluptatum rem velit ad non provident unde
+                harum itaque sapiente quae a ipsam, odit et neque vitae rerum ea
+                officiis nostrum laboriosam iusto.
+              </div>
+            </div>
           </div>
-          <img src="../IMG/banner-home.png" class="md:w-150 lg:w-200" />
+
+          <div>
+            <img
+              src="../IMG/meeting.png"
+              alt="Our Staff"
+              class="rounded-3xl shadow-lg w-full h-auto object-cover hidden lg:block"
+            />
+          </div>
         </div>
       </div>
     </section>
 
-<!--about-->
-    <section id="about" class="max-w-6xl mx-auto px-6 flex flex-col-reverse lg:flex-row justify-between gap-16 md:items-center py-10 lg:py-15 md:py-0">
-      <div class="container">
-        <div class="flex flex-col lg:flex-row items-center gap-20">
-          <div class="relative w-full max-w-md mx-auto mb-32 lg:mb-0">
-            <img
-              src="../IMG/3chefs.png"
-              class="w-4/5 rounded-3xl shadow-xl border-8 border-black relative z-0"
-              alt="Our Chefs"
-            />
-            <img
-              src="../IMG/food.png"
-              class="absolute top-6/10 -right-4 w-4/5 rounded-3xl shadow-xl border-8 border-black z-10"
-              alt="Pizza and Food"
-            />
-          </div>
-
-          <div class="text-left mx-auto lg:mx-0 py-0 md:py-30 lg:py-30 ">
-            <h2
-              class="text-3xl md:text-4xl font-extrabold mb-5 text-black tracking-tight"
-            >
-              WELCOME TO GET PIZZA
-            </h2>
-            <p
-              class="text-primary font-bold mb-5 text-sm md:text-base leading-snug pr-4 justify-around"
-            >
-              OUR CHEFS ARE WORKING 24/7 AND ARE READY TO ACCEPT VISITORS AND AT
-              ANY TIME OF THE DAY AND NIGHT
-            </p>
-            <p class="text-gray-800 text-sm md:text-base leading-relaxed justify-around">
-              We would like to take this opportunity to welcome you at our Pizza
-              House. We are offering a warm, friendly atmosphere to share a meal
-              with family and friends at any time of the day or evening.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-<!--menu-->
-    <section id="menu" class="bg-tertiary text-white py-24 text-center pt-5">
+    <!--menu-->
+    <section id="menu" class="bg-tertiary text-white py-24 text-center">
       <div class="max-w-7xl mx-auto px-6">
-        <h2 class="text-2xl font-bold mb-10 pt-6">
+        <h2 class="text-2xl font-bold mb-10">
           WE OFFER PEOPLE BEST WAY TO EAT BEST FOOD
         </h2>
 
@@ -194,7 +290,6 @@
           id="menu-container"
           class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4 md:gap-8 max-w-5xl mx-auto"
         >
-          <!--pizza-->
           <div
             class="menu-item pizza flex flex-col border border-white/30 rounded-2xl p-4 sm:p-10 transition hover:scale-105 duration-300"
           >
@@ -240,7 +335,7 @@
               Read more
             </button>
           </div>
-          <!--burger-->
+
           <div
             class="menu-item burger hidden flex-col border border-white/30 rounded-2xl p-4 sm:p-10 transition hover:scale-105 duration-300"
           >
@@ -286,7 +381,6 @@
             </button>
           </div>
 
-          <!--chicken-->
           <div
             class="menu-item chicken hidden flex-col border border-white/30 rounded-2xl p-4 sm:p-10 transition hover:scale-105 duration-300"
           >
@@ -309,6 +403,7 @@
               Read more
             </button>
           </div>
+
           <div
             class="menu-item chicken hidden flex-col border border-white/30 rounded-2xl p-4 sm:p-10 transition hover:scale-105 duration-300"
           >
@@ -332,7 +427,6 @@
             </button>
           </div>
 
-          <!--drinks-->
           <div
             class="menu-item drinks hidden flex-col border border-white/30 rounded-2xl p-4 sm:p-10 transition hover:scale-105 duration-300"
           >
@@ -378,7 +472,6 @@
             </button>
           </div>
 
-          <!--cake-->
           <div
             class="menu-item cake hidden flex-col border border-white/30 rounded-2xl p-4 sm:p-10 transition hover:scale-105 duration-300"
           >
@@ -427,8 +520,118 @@
       </div>
     </section>
 
-<!--contact-->
-    <section class="bg-primary relative overflow-hidden py-20 lg:py-0 ">
+    <!--feedback-->
+    <section class="py-20 bg-white">
+      <div class="container mx-auto px-4 text-center max-w-4xl relative">
+        <h2 class="text-3xl font-black mb-10 uppercase">Clients Review</h2>
+
+        <div id="review-slider" class="relative px-12">
+          <div class="slide flex flex-col items-center animate-fade-in">
+            <img
+              src="../IMG/feedback.png"
+              class="w-20 h-20 rounded-full mx-auto mb-6 object-cover"
+              alt="Patrick Greenish"
+            />
+            <blockquote class="text-gray-600 italic text-lg mb-4">
+              "Etiam sapien sem at sagittis congue augue massa varius sodales
+              sapien undo tempus dolor egestas magna suscipit magna tempus
+              aliquet porta sodales augue suscipit luctus neque"
+            </blockquote>
+            <p class="font-bold text-gray-800">Patrick Greenish</p>
+          </div>
+
+          <div class="slide hidden flex-col items-center animate-fade-in">
+            <img
+              src="../IMG/feedback2.png"
+              class="w-20 h-20 rounded-full mx-auto mb-6 object-cover"
+              alt="Patricia Blueish"
+            />
+            <blockquote class="text-gray-600 italic text-lg mb-4">
+              "Etiam sapien sem at sagittis congue augue massa varius sodales
+              sapien undo tempus dolor egestas magna suscipit magna tempus
+              aliquet porta sodales augue suscipit luctus neque"
+            </blockquote>
+            <p class="font-bold text-gray-800">Patricia Blueish</p>
+          </div>
+
+          <div class="slide hidden flex-col items-center animate-fade-in">
+            <img
+              src="../IMG/feedback3.png"
+              class="w-20 h-20 rounded-full mx-auto mb-6 object-cover"
+              alt="Patricia Blueish"
+            />
+            <blockquote class="text-gray-600 italic text-lg mb-4">
+              "Etiam sapien sem at sagittis congue augue massa varius sodales
+              sapien undo tempus dolor egestas magna suscipit magna tempus
+              aliquet porta sodales augue suscipit luctus neque"
+            </blockquote>
+            <p class="font-bold text-gray-800">Patricia Blueish</p>
+          </div>
+
+          <div class="slide hidden flex-col items-center animate-fade-in">
+            <img
+              src="../IMG/feedback4.png"
+              class="w-20 h-20 rounded-full mx-auto mb-6 object-cover"
+              alt="Patricia Blueish"
+            />
+            <blockquote class="text-gray-600 italic text-lg mb-4">
+              "Etiam sapien sem at sagittis congue augue massa varius sodales
+              sapien undo tempus dolor egestas magna suscipit magna tempus
+              aliquet porta sodales augue suscipit luctus neque"
+            </blockquote>
+            <p class="font-bold text-gray-800">Patricia Blueish</p>
+          </div>
+
+          <div class="slide hidden flex-col items-center animate-fade-in">
+            <img
+              src="../IMG/feedback5.png"
+              class="w-20 h-20 rounded-full mx-auto mb-6 object-cover"
+              alt="Patricia Blueish"
+            />
+            <blockquote class="text-gray-600 italic text-lg mb-4">
+              "Etiam sapien sem at sagittis congue augue massa varius sodales
+              sapien undo tempus dolor egestas magna suscipit magna tempus
+              aliquet porta sodales augue suscipit luctus neque"
+            </blockquote>
+            <p class="font-bold text-gray-800">Patricia Blueish</p>
+          </div>
+        </div>
+        <!--slider button-->
+        <button
+          id="prev-slide"
+          class="absolute left-0 top-1/2 translate-y-4 md:translate-y-8 text-gray-400 hover:text-primary transition p-2"
+        >
+          <i class="fa-solid fa-chevron-left text-3xl"></i>
+        </button>
+        <button
+          id="next-slide"
+          class="absolute right-0 top-1/2 translate-y-4 md:translate-y-8 text-gray-400 hover:text-primary transition p-2"
+        >
+          <i class="fa-solid fa-chevron-right text-3xl"></i>
+        </button>
+
+        <div id="slider-dots" class="flex justify-center gap-2 mt-8">
+          <button
+            class="dot w-3 h-3 rounded-full bg-primary transition-colors"
+          ></button>
+          <button
+            class="dot w-3 h-3 rounded-full bg-gray-300 hover:bg-primary transition-colors"
+          ></button>
+          <button
+            class="dot w-3 h-3 rounded-full bg-gray-300 hover:bg-primary transition-colors"
+          ></button>
+          <button
+            class="dot w-3 h-3 rounded-full bg-gray-300 hover:bg-primary transition-colors"
+          ></button>
+          <button
+            class="dot w-3 h-3 rounded-full bg-gray-300 hover:bg-primary transition-colors"
+          ></button>
+        </div>
+      </div>
+    </section>
+
+    <!--contact-->
+    <section class="bg-primary relative overflow-hidden py-20 lg:py-0">
       <div
         class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center"
       >
@@ -443,7 +646,7 @@
               class="grow px-4 py-2 outline-none text-black text-sm"
             />
             <button
-              class="bg-orange-400 text-black px-6 py-2 rounded  hover:bg-orange-500"
+              class="bg-orange-400 text-black px-6 py-2 rounded hover:bg-orange-500"
             >
               SUBSCRIBE
             </button>
@@ -452,7 +655,7 @@
       </div>
     </section>
 
-<!--footer-->
+    <!--footer-->
     <footer class="bg-white py-16 text-center">
       <img src="../IMG/LOGO.png" class="mx-auto mb-10" />
       <div
@@ -464,7 +667,7 @@
           <p class="text-gray-600">10018 United States</p>
         </div>
         <div>
-          <h4 class="font-black  uppercase">Book A Table</h4>
+          <h4 class="font-black uppercase">Book A Table</h4>
           <p class="text-gray-600">Dogfood Och Sliders Foodtruck.</p>
           <p class="text-gray-600">Under Om Oss Kan Ni Läsa</p>
         </div>
@@ -477,7 +680,7 @@
       <p class="mt-12 text-sm text-primary text-500">0123456987</p>
     </footer>
 
-<!--script-->
+    <!--script-->
     <script src="../js/toggle-menu.js"></script>
     <script src="../js/mode.js"></script>
     <script src="../js/script.js"></script>
