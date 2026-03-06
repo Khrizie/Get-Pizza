@@ -114,3 +114,7 @@
 }
 .no-scrollbar::-webkit-scrollbar { display: none; }
 .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+.active-category {
+        background-color: #b23920 !important; 
+        color: white !important;
+    }
